@@ -99,6 +99,8 @@ void main() {
         ),
       );
 
+      await tester.pumpAndSettle();
+
       expect(find.text('NEW'), findsOneWidget);
       expect(find.byType(SBanner), findsOneWidget);
     });
@@ -124,6 +126,8 @@ void main() {
           ),
         ),
       );
+
+      await tester.pumpAndSettle();
 
       expect(find.text('SALE'), findsOneWidget);
       expect(find.byType(SBanner), findsOneWidget);
@@ -151,6 +155,8 @@ void main() {
         ),
       );
 
+      await tester.pumpAndSettle();
+
       expect(find.text('HOT'), findsOneWidget);
       expect(find.byType(SBanner), findsOneWidget);
     });
@@ -177,6 +183,8 @@ void main() {
         ),
       );
 
+      await tester.pumpAndSettle();
+
       expect(find.text('BEST'), findsOneWidget);
       expect(find.byType(SBanner), findsOneWidget);
     });
@@ -197,6 +205,8 @@ void main() {
           ),
         ),
       );
+
+      await tester.pumpAndSettle();
 
       expect(find.text('TEST'), findsOneWidget);
       expect(find.byType(SBanner), findsOneWidget);
@@ -241,6 +251,8 @@ void main() {
           ),
         ),
       );
+
+      await tester.pumpAndSettle();
 
       expect(find.text('DYNAMIC'), findsOneWidget);
 
@@ -297,6 +309,8 @@ void main() {
         ),
       );
 
+      await tester.pumpAndSettle();
+
       expect(find.text('TOGGLE'), findsOneWidget);
 
       // Deactivate banner
@@ -331,6 +345,8 @@ void main() {
         ),
       );
 
+      await tester.pumpAndSettle();
+
       expect(find.text('CUSTOM'), findsOneWidget);
       expect(find.byType(SBanner), findsOneWidget);
     });
@@ -358,6 +374,8 @@ void main() {
           ),
         ),
       );
+
+      await tester.pumpAndSettle();
 
       expect(find.text('OVERFLOW'), findsOneWidget);
       expect(find.byType(SBanner), findsOneWidget);

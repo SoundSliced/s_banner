@@ -31,6 +31,8 @@ void main() {
         ),
       ));
 
+      await tester.pumpAndSettle();
+
       // Read positions
       final childFinder = find.byType(SBanner);
       final childTopLeft = tester.getTopLeft(childFinder);
@@ -93,6 +95,8 @@ void main() {
       ),
     ));
 
+    await tester.pumpAndSettle();
+
     // There's a Stack within SBanner; ensure its clipBehavior is Clip.hardEdge
     final sbannerStack =
         find.descendant(of: find.byType(SBanner), matching: find.byType(Stack));
@@ -111,6 +115,8 @@ void main() {
         ),
       ),
     ));
+
+    await tester.pumpAndSettle();
 
     final sbannerStack2 =
         find.descendant(of: find.byType(SBanner), matching: find.byType(Stack));
@@ -143,6 +149,8 @@ void main() {
         ),
       ),
     ));
+
+    await tester.pumpAndSettle();
 
     // Find the private `_BannerBox` widget by runtime type name.
     final bannerBoxFinder = find.byWidgetPredicate((w) =>
