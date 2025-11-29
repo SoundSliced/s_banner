@@ -4,13 +4,50 @@ s_banner is a small Flutter package that renders an angular corner banner (a rib
 
 This package provides a single convenient widget, `SBanner`, which overlays a ribbon with custom content on top of another widget.
 
+## Example
+
+Open `example/lib/main.dart` to see a small demo. The example shows how to toggle the banner on and off and position it in different corners.
+
+### Visual examples
+
+Below are screenshots that demonstrate the ribbon applied to both rectangular and circular widgets in different corners.
+
+#### Rectangular widgets
+
+Without banner (inactive):
+
+![Rectangular widget](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/rect.png)
+
+With banner - top-right:
+
+![Rectangular banner top-right](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/rect-tr.png)
+
+With banner - bottom-left:
+
+![Rectangular banner bottom-left](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/rect-bl.png)
+
+#### Circular widgets
+
+Without banner (inactive):
+
+![Circular widget](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular.png)
+
+With banner - top-left:
+
+![Circular banner top-left](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular-tl.png)
+
+With banner - bottom-right:
+
+![Circular banner bottom-right](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular-br.png)
+
+
 ## Installation
 
 Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  s_banner: ^1.0.1
+  s_banner: ^1.0.2
 ```
 
 If you are working locally with a path dependency for development, point to the package directory:
@@ -124,42 +161,6 @@ Tips:
 - If using multi-line text or large widgets for `bannerContent`, control size with a `SizedBox` or `Padding`.
 - The banner rotates content 45 degrees; account for the visible area when sizing.
 - When using `isChildCircular: true`, the banner edges will curve to follow the circular shape of the child widget, creating a more natural appearance that stays inside the child's bounds. Provide `childBorderRadius` if you need to override the automatically detected radius.
-
-## Example
-
-Open `example/lib/main.dart` to see a small demo. The example shows how to toggle the banner on and off and position it in different corners.
-
-### Visual examples
-
-Below are screenshots that demonstrate the ribbon applied to both rectangular and circular widgets in different corners.
-
-#### Rectangular widgets
-
-Without banner (inactive):
-
-![Rectangular widget](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/rect.png)
-
-With banner - top-right:
-
-![Rectangular banner top-right](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/rect-tr.png)
-
-With banner - bottom-left:
-
-![Rectangular banner bottom-left](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/rect-bl.png)
-
-#### Circular widgets
-
-Without banner (inactive):
-
-![Circular widget](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular.png)
-
-With banner - top-left:
-
-![Circular banner top-left](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular-tl.png)
-
-With banner - bottom-right:
-
-![Circular banner bottom-right](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular-br.png)
 
 
 ## Tests
