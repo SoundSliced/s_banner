@@ -2,7 +2,7 @@ name: s_banner
 description: A lightweight Flutter widget to add a customizable corner ribbon (banner) to any widget, with configurable position, color, elevation, and custom content. Supports both rectangular and circular children.
 issue_tracker: https://github.com/SoundSliced/s_banner/issues
 repository: https://github.com/SoundSliced/s_banner
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/SoundSliced/s_banner
 license: MIT
 
