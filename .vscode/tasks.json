@@ -111,6 +111,38 @@
 			"args": [],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Check status now clean",
+			"type": "shell",
+			"command": "git status --porcelain -b || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Show diff again tasks.json",
+			"type": "shell",
+			"command": "git diff -- .vscode/tasks.json | sed -n '1,400p' || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Show staged diff tasks.json",
+			"type": "shell",
+			"command": "git diff --staged -- .vscode/tasks.json | sed -n '1,200p' || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Commit tasks.json again if modified",
+			"type": "shell",
+			"command": "git add .vscode/tasks.json && git commit -m \"Temp: finalize tasks used for local operations\" || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
