@@ -137,51 +137,30 @@ Below are screenshots that demonstrate the ribbon applied to both rectangular an
 
 Without banner (inactive):
 
-![Rectangular widget](example/assets/rect.png)
+![Rectangular widget](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/rect.png)
 
 With banner - top-right:
 
-![Rectangular banner top-right](example/assets/rect-tr.png)
+![Rectangular banner top-right](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/rect-tr.png)
 
 With banner - bottom-left:
 
-![Rectangular banner bottom-left](example/assets/rect-bl.png)
+![Rectangular banner bottom-left](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/rect-bl.png)
 
 #### Circular widgets
 
 Without banner (inactive):
 
-![Circular widget](example/assets/circular.png)
+![Circular widget](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular.png)
 
 With banner - top-left:
 
-![Circular banner top-left](example/assets/circular-tl.png)
+![Circular banner top-left](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular-tl.png)
 
 With banner - bottom-right:
 
-![Circular banner bottom-right](example/assets/circular-br.png)
+![Circular banner bottom-right](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular-br.png)
 
-### Generating screenshots from the web example
-
-To capture real screenshots from the example running on the Flutter web platform, you can use the provided script `scripts/screenshot_example.sh`.
-
-This script builds the example, serves the generated web app, and captures screenshots via headless Chrome (Chromium). It writes screenshots to `example/assets/screenshots`.
-
-Example usage:
-
-```bash
-# Build and capture default positions
-chmod +x scripts/screenshot_example.sh
-scripts/screenshot_example.sh
-
-# Capture a subset of positions
-scripts/screenshot_example.sh topLeft topRight
-
-# Customize port and window sizes
-scripts/screenshot_example.sh --port 8081 --sizes 800x600,1200x900 --states true,false topLeft bottomRight
-```
-
-Note: The script expects Chrome/Chromium to be installed on your system. It will use the macOS Chrome path if available or look for `google-chrome`/`chromium` in PATH.
 
 ## Tests
 
