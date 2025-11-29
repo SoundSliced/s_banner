@@ -1,6 +1,7 @@
 ## 1.0.1
 
-* Version 1.0.1
+- README updated to show exmaple screenshots
+
 
 ## 1.0.0 - 2025-11-29
 
