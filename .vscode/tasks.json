@@ -143,6 +143,14 @@
 			"args": [],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Check git status before filter-branch",
+			"type": "shell",
+			"command": "git status --porcelain -b || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
