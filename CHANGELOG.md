@@ -1,3 +1,7 @@
+## 1.0.4 - 2025-11-29
+
+- pubspec.yaml's package description updated
+
 ## 1.0.3 - 2025-11-29
 
 - README updated: new screenshots (icon banners)
