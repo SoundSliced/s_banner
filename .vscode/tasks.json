@@ -95,6 +95,22 @@
 			"args": [],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Show full diff tasks.json",
+			"type": "shell",
+			"command": "git diff -- .vscode/tasks.json | sed -n '1,300p' || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Fix newline and commit tasks.json",
+			"type": "shell",
+			"command": "perl -0777 -pe 's/\\z/\\n/' -i .vscode/tasks.json || true; git add .vscode/tasks.json && git commit -m \"Update tasks.json newline\" || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
