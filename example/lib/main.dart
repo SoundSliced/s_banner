@@ -84,14 +84,19 @@ class _ExampleHomeState extends State<ExampleHome> {
               bannerPosition: _position,
               isActive: _active,
               isChildCircular: _isCircular,
-              bannerContent: Text(
+              bannerContent: /* Text(
                 'NEW Banner',
                 style: TextStyle(
                   color: Colors.white70,
                   fontWeight: FontWeight.bold,
                 ),
+              ) */
+                  Icon(
+                Icons.star,
+                color: Colors.yellow.shade400,
+                size: 20,
               ),
-              bannerColor: Colors.red,
+              bannerColor: Colors.purple,
               child: Container(
                 width: _isCircular ? 200 : 200,
                 height: _isCircular ? 200 : 120,

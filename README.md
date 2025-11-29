@@ -41,13 +41,20 @@ With banner - bottom-right:
 ![Circular banner bottom-right](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular-br.png)
 
 
+With Icon banner:
+
+![Circular Icon banner bottom-left](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/circular-icon-bl.png)
+
+![Circular Icon banner bottom-left](https://raw.githubusercontent.com/SoundSliced/s_banner/main/example/assets/rect-icon-tr.png)
+
+
 ## Installation
 
 Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  s_banner: ^1.0.2
+  s_banner: ^1.0.3
 ```
 
 If you are working locally with a path dependency for development, point to the package directory:
