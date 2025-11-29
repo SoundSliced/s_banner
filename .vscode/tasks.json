@@ -71,6 +71,30 @@
 				"-r",
 				"expanded"
 			]
+		},
+		{
+			"label": "Check final status pre-filter-branch",
+			"type": "shell",
+			"command": "git status --porcelain -b || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check if tasks.json tracked",
+			"type": "shell",
+			"command": "git ls-files --error-unmatch .vscode/tasks.json && echo tracked || echo not-tracked || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Commit tasks.json on main",
+			"type": "shell",
+			"command": "git add .vscode/tasks.json && git commit -m \"Temp: update tasks.json to reflect new tasks used by the CI\" || true",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
