@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:s_banner/s_banner.dart';
 
 void main() {

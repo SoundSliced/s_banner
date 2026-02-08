@@ -54,7 +54,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  s_banner: ^1.0.4
+  s_banner: ^2.0.0
 ```
 
 If you are working locally with a path dependency for development, point to the package directory:
