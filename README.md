@@ -54,7 +54,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  s_banner: ^2.0.0
+  s_banner: ^2.1.0
 ```
 
 If you are working locally with a path dependency for development, point to the package directory:
@@ -87,6 +87,9 @@ dependencies:
 - `clipBannerToChild` (bool): Whether the ribbon is clipped to the child's bounds. Defaults to `true`.
 - `isChildCircular` (bool): Whether the child widget is circular. When `true`, the banner shape adapts with curved edges to naturally wrap around the circular child. Defaults to `false`.
 - `childBorderRadius` (double?): Optional explicit radius when using circular banners. When omitted, the radius is inferred from the rendered child size, allowing the semi-circular banner to stay flush with the child's edge.
+- `onTap` (VoidCallback?): Callback when the banner is tapped.
+- `gradient` (Gradient?): Gradient background for the banner ribbon (overrides `bannerColor`).
+- `animateVisibility` (bool): Animate show/hide transitions. Defaults to `false`.
 
 ## Quick usage
 
